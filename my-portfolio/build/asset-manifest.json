@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fbb08ad3.css",
+    "main.js": "/static/js/main.68369fca.js",
+    "static/js/453.acca0757.chunk.js": "/static/js/453.acca0757.chunk.js",
+    "static/media/nodejs.png": "/static/media/nodejs.d980d9636ace07ad3dde.png",
+    "static/media/power-apps.png": "/static/media/power-apps.f73e6c47b81beb06cfc4.png",
+    "static/media/python.png": "/static/media/python.ac804f2ded6be7c12363.png",
+    "static/media/aws.png": "/static/media/aws.850296a094250f4a242e.png",
+    "static/media/power-bi.png": "/static/media/power-bi.8dd3cdc999945bf08b39.png",
+    "static/media/mysql.png": "/static/media/mysql.deddb3b5f0261076abc2.png",
+    "static/media/power-automate.png": "/static/media/power-automate.81e256aee47f2fffcf52.png",
+    "index.html": "/index.html",
+    "main.fbb08ad3.css.map": "/static/css/main.fbb08ad3.css.map",
+    "main.68369fca.js.map": "/static/js/main.68369fca.js.map",
+    "453.acca0757.chunk.js.map": "/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbb08ad3.css",
+    "static/js/main.68369fca.js"
+  ]
+}
