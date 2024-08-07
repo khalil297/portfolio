@@ -1,0 +1,262 @@
+.App {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #007bff;
+}
+
+section {
+  margin: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #282c34;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p, ul {
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Additional Styling for Specific Sections */
+#contact a {
+  color: #007bff;
+}
+
+#contact p {
+  margin: 10px 0;
+}
+
+#hobbies ul {
+  list-style-type: disc;
+}
+
+/* CSS for Experience Section */
+#experience .experience-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout by default */
+  grid-template-rows: auto auto; /* Two rows for responsiveness */
+  gap: 20px; /* Space between items */
+  position: relative; /* Position relative for absolute positioning of tech icons */
+}
+
+#experience .experience-item {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  position: relative; /* Position relative to place tech icons */
+}
+
+/* Tech Icons Style */
+#experience .tech-icons {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Style for tech icons */
+#experience .tech-icon {
+  width: 120px; /* Set width */
+  height: 80px; /* Set height */
+  object-fit: contain; /* Ensure the aspect ratio is maintained */
+  margin: 0; /* Remove default margins */
+}
+
+/* Positioning for the first 5 icons (Top-right of first experience) */
+#experience .tech-icons-first {
+  top: 0; /* Align to the top */
+  right: 0; /* Align to the right */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end; /* Align items to the right */
+}
+
+#experience .tech-icons-first .tech-icon:nth-child(1) {
+  transform: translateX(620px) translateY(0); /* Keep the first icon in its place */
+}
+
+#experience .tech-icons-first .tech-icon:nth-child(2) {
+  transform: translateX(720px) translateY(60px); /* Move the second icon right */
+}
+
+#experience .tech-icons-first .tech-icon:nth-child(3) {
+  transform: translateX(820px) translateY(120px); /* Move the third icon right */
+}
+
+#experience .tech-icons-first .tech-icon:nth-child(4) {
+  transform: translateX(300px) translateY(120px); /* Move the fourth icon right */
+}
+
+#experience .tech-icons-first .tech-icon:nth-child(5) {
+  transform: translateX(520px) translateY(0); /* Move the fifth icon right */
+}
+
+/* Positioning for the last 2 icons (Bottom-left of second experience) */
+#experience .tech-icons-second {
+  bottom: 0; /* Align to the bottom */
+  left: 0; /* Align to the left */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+}
+
+#experience .tech-icons-second .tech-icon:nth-child(1) {
+  transform: translateX(-580px) translateY(20px); /* Keep the first icon in its place */
+}
+
+#experience .tech-icons-second .tech-icon:nth-child(2) {
+  transform: translateX(-200px) translateY(0px); /* Move the second icon down */
+}
+
+#experience .tech-icons-second .tech-icon:nth-child(3) {
+  transform: translateX(-500px) translateY(0px); /* Move the second icon down */
+}
+
+/* CSS for Projects Section */
+#projects .projects-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout by default */
+  grid-template-rows: auto auto; /* Two rows for responsiveness */
+  gap: 20px; /* Space between items */
+  position: relative; /* Position relative */
+}
+
+#projects .project-item {
+  background-color: #f4f4f4; /* Grey background */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  position: relative; /* Relative positioning */
+}
+
+#projects .tech-icons-projects {
+  position: absolute;
+  top: 50%;
+  right: -200px; /* Adjust the value to move the icons further to the right */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: row;
+}
+
+#projects .tech-icon {
+  width: 80px; /* Increased width for project icons */
+  height: 80px; /* Increased height for project icons */
+  object-fit: contain; /* Ensure the aspect ratio is maintained */
+  margin-right: 10px; /* Space between icons */
+}
+
+/* CSS for Horizontal Layout of Certificates and Contact */
+.horizontal-sections {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.certificates-container, .contact-container {
+  flex: 1;
+  max-width: 50%;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  #experience .experience-grid {
+    grid-template-columns: 1fr 1fr; /* Two equal columns on larger screens */
+    grid-template-rows: auto auto; /* Two rows to ensure items stack correctly */
+  }
+  
+  #experience .experience-item:nth-child(1) {
+    grid-column: 1 / 2; /* Place the first item in the first column */
+    grid-row: 1; /* First row */
+  }
+  
+  #experience .experience-item:nth-child(2) {
+    grid-column: 2; /* Place the second item in the second column */
+    grid-row: 2; /* Second row */
+  }
+  
+  #experience .tech-icons-first {
+    grid-column: 1; /* Align tech icons to the first column */
+    grid-row: 1; /* Same row as the first item */
+  }
+
+  #experience .tech-icons-second {
+    grid-column: 2; /* Align tech icons to the second column */
+    grid-row: 2; /* Same row as the second item */
+  }
+
+  #projects .projects-grid {
+    grid-template-columns: 1fr 1fr; /* Two equal columns on larger screens */
+    grid-template-rows: auto auto; /* Two rows to ensure items stack correctly */
+  }
+  
+  #projects .project-item:nth-child(1) {
+    grid-column: 1 / 2; /* Place the first item in the first column */
+    grid-row: 1; /* First row */
+  }
+  
+  #projects .project-item:nth-child(2) {
+    grid-column: 2; /* Place the second item in the second column */
+    grid-row: 2; /* Second row */
+  }
+
+  #projects .tech-icons-projects {
+    right: -500px; /* Adjust the value to move the icons further to the right on larger screens */
+  }
+}
