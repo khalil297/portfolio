@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/khalil297/portfolio.git/static/css/main.fbb08ad3.css",
+    "main.js": "/khalil297/portfolio.git/static/js/main.c3acd800.js",
+    "static/js/453.acca0757.chunk.js": "/khalil297/portfolio.git/static/js/453.acca0757.chunk.js",
+    "static/media/nodejs.png": "/khalil297/portfolio.git/static/media/nodejs.d980d9636ace07ad3dde.png",
+    "static/media/power-apps.png": "/khalil297/portfolio.git/static/media/power-apps.f73e6c47b81beb06cfc4.png",
+    "static/media/python.png": "/khalil297/portfolio.git/static/media/python.ac804f2ded6be7c12363.png",
+    "static/media/aws.png": "/khalil297/portfolio.git/static/media/aws.850296a094250f4a242e.png",
+    "static/media/power-bi.png": "/khalil297/portfolio.git/static/media/power-bi.8dd3cdc999945bf08b39.png",
+    "static/media/mysql.png": "/khalil297/portfolio.git/static/media/mysql.deddb3b5f0261076abc2.png",
+    "static/media/power-automate.png": "/khalil297/portfolio.git/static/media/power-automate.81e256aee47f2fffcf52.png",
+    "index.html": "/khalil297/portfolio.git/index.html",
+    "main.fbb08ad3.css.map": "/khalil297/portfolio.git/static/css/main.fbb08ad3.css.map",
+    "main.c3acd800.js.map": "/khalil297/portfolio.git/static/js/main.c3acd800.js.map",
+    "453.acca0757.chunk.js.map": "/khalil297/portfolio.git/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbb08ad3.css",
+    "static/js/main.c3acd800.js"
+  ]
+}
