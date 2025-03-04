@@ -4,7 +4,7 @@ function Header() {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
-      const offset = 200; // Adjust this value based on your header height
+      const offset = 200; 
       const bodyRect = document.body.getBoundingClientRect().top;
       const sectionRect = section.getBoundingClientRect().top;
       const sectionPosition = sectionRect - bodyRect;

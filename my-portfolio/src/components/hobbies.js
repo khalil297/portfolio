@@ -7,7 +7,7 @@ function Hobbies() {
 
       <p>In addition to my professional and academic pursuits, I have a strong passion for sports and teamwork.</p>
 
-      <p><strong>Water Polo:</strong> I was an active member of the University of Saint-Joseph (USJ) water polo team, where I played as a wing.</p>
+      <p><strong>Water Polo:</strong> I was an active member of the University of Saint Joseph (USJ) water polo team, where I played as a wing.</p>
       <ul>
         <li>Participated in numerous competitions against teams from the American University of Beirut (AUB) and other Lebanese clubs.</li>
         <li>Won the bronze medal at the 2019 championship.</li>
@@ -17,7 +17,7 @@ function Hobbies() {
         <a href="https://www.instagram.com/usjwaterpolo/" target="_blank" rel="noopener noreferrer"> Instagram page</a>.
       </p>
       
-      <p><strong>Music:</strong> I was a tenor with the Voice of Heaven Choir in Lebanon. Here are some highlights of my involvement:</p>
+      <p><strong>Music:</strong> I sang as a tenor with the Voice of Heaven Choir in Lebanon. Here are some highlights of my involvement:</p>
       <ul>
         <li>Performed religious hymns and participated in concerts throughout Lebanon during Christmas and summer seasons.</li>
         <li>Had the privilege of singing alongside renowned international and national artists such as Hiba Tawaji, Oussama Rahbani, Aline Lahoud, and many others.</li>

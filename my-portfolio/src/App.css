@@ -117,38 +117,7 @@ a:hover {
   object-fit: contain; /* Ensure the aspect ratio is maintained */
   margin: 0; /* Remove default margins */
 }
-
-/* Positioning for the first 5 icons (Top-right of first experience) */
 #experience .tech-icons-first {
-  top: 0; /* Align to the top */
-  right: 0; /* Align to the right */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end; /* Align items to the right */
-}
-
-#experience .tech-icons-first .tech-icon:nth-child(1) {
-  transform: translateX(620px) translateY(0); /* Keep the first icon in its place */
-}
-
-#experience .tech-icons-first .tech-icon:nth-child(2) {
-  transform: translateX(720px) translateY(60px); /* Move the second icon right */
-}
-
-#experience .tech-icons-first .tech-icon:nth-child(3) {
-  transform: translateX(820px) translateY(120px); /* Move the third icon right */
-}
-
-#experience .tech-icons-first .tech-icon:nth-child(4) {
-  transform: translateX(300px) translateY(120px); /* Move the fourth icon right */
-}
-
-#experience .tech-icons-first .tech-icon:nth-child(5) {
-  transform: translateX(520px) translateY(0); /* Move the fifth icon right */
-}
-
-/* Positioning for the last 2 icons (Bottom-left of second experience) */
-#experience .tech-icons-second {
   bottom: 0; /* Align to the bottom */
   left: 0; /* Align to the left */
   display: flex;
@@ -156,18 +125,81 @@ a:hover {
   align-items: flex-start; /* Align items to the left */
 }
 
+#experience .tech-icons-first .tech-icon:nth-child(1) {
+  transform: translateX(-580px) translateY(100px); /* Keep the first icon in its place */
+}
+
+#experience .tech-icons-first .tech-icon:nth-child(2) {
+  transform: translateX(-200px) translateY(0px); /* Move the second icon down */
+}
+#experience .tech-icons-first .tech-icon:nth-child(3) {
+  transform: translateX(-350px) translateY(0px); /* Move the second icon down */
+}
+#experience .tech-icons-first .tech-icon:nth-child(4) {
+  transform: translateX(-500px) translateY(0px); /* Move the second icon down */
+}
+/* Positioning for the first 5 icons (Top-right of first experience) */
+#experience .tech-icons-second {
+  top: 0; /* Align to the top */
+  right: 0; /* Align to the right */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end; /* Align items to the right */
+}
+
 #experience .tech-icons-second .tech-icon:nth-child(1) {
-  transform: translateX(-580px) translateY(20px); /* Keep the first icon in its place */
+  transform: translateX(620px) translateY(0); /* Keep the first icon in its place */
 }
 
 #experience .tech-icons-second .tech-icon:nth-child(2) {
-  transform: translateX(-200px) translateY(0px); /* Move the second icon down */
+  transform: translateX(720px) translateY(60px); /* Move the second icon right */
 }
 
 #experience .tech-icons-second .tech-icon:nth-child(3) {
-  transform: translateX(-500px) translateY(0px); /* Move the second icon down */
+  transform: translateX(820px) translateY(120px); /* Move the third icon right */
 }
 
+#experience .tech-icons-second .tech-icon:nth-child(4) {
+  transform: translateX(300px) translateY(120px); /* Move the fourth icon right */
+}
+
+#experience .tech-icons-second .tech-icon:nth-child(5) {
+  transform: translateX(520px) translateY(0); /* Move the fifth icon right */
+}
+
+/* Positioning for the last 2 icons (Bottom-left of second experience) */
+#experience .tech-icons-third {
+  bottom: 0; /* Align to the bottom */
+  left: 0; /* Align to the left */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+}
+
+#experience .tech-icons-third .tech-icon:nth-child(1) {
+  transform: translateX(-580px) translateY(20px); /* Keep the first icon in its place */
+}
+
+#experience .tech-icons-third .tech-icon:nth-child(2) {
+  transform: translateX(-200px) translateY(0px); /* Move the second icon down */
+}
+
+#experience .tech-icons-third .tech-icon:nth-child(3) {
+  transform: translateX(-500px) translateY(0px); /* Move the third icon down */
+}
+
+#projects .tech-icons-projects .tech-icon:nth-child(1) {
+  transform: translateX(30px) translateY(0px); /* Move the third icon down */
+}
+#projects .tech-icons-projects .tech-icon:nth-child(2) {
+  transform: translateX(50px) translateY(0px); /* Move the third icon down */
+}
+#projects .tech-icons-projects .tech-icon:nth-child(3) {
+  transform: translateX(70px) translateY(0px); /* Move the third icon down */
+}
+#projects .tech-icons-projects .tech-icon:nth-child(4) {
+  transform: translateX(90px) translateY(0px); /* Move the third icon down */
+}
 /* CSS for Projects Section */
 #projects .projects-grid {
   display: grid;
@@ -221,14 +253,24 @@ a:hover {
     grid-template-rows: auto auto; /* Two rows to ensure items stack correctly */
   }
   
+
   #experience .experience-item:nth-child(1) {
+    grid-column: 2; /* Place the second item in the second column */
+    grid-row: 1; /* Second row */
+  }
+  #experience .experience-item:nth-child(2) {
     grid-column: 1 / 2; /* Place the first item in the first column */
-    grid-row: 1; /* First row */
+    grid-row: 2; /* First row */
   }
   
-  #experience .experience-item:nth-child(2) {
+  #experience .experience-item:nth-child(3) {
     grid-column: 2; /* Place the second item in the second column */
-    grid-row: 2; /* Second row */
+    grid-row: 3; /* Second row */
+  }
+
+  #experience .tech-icons-third {
+    grid-column: 1; /* Align tech icons to the second column */
+    grid-row: 1; /* Same row as the second item */
   }
   
   #experience .tech-icons-first {
@@ -259,4 +301,5 @@ a:hover {
   #projects .tech-icons-projects {
     right: -500px; /* Adjust the value to move the icons further to the right on larger screens */
   }
+  
 }

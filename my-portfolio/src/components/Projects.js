@@ -15,7 +15,7 @@ function Projects() {
           <ul>
             <li>Developed the application using React, Node.js, and MySQL.</li>
             <li>Implemented an Ethereum blockchain network using Hyperledger Besu.</li>
-            <li>Connected to the network via Web3.</li>
+            <li>Integrated Web3 connectivity to interact with the blockchain.</li>
           </ul>
           <div className="tech-icons tech-icons-projects">
             <img src={nodejsIcon} alt="Node.js" className="tech-icon" />
